@@ -13,6 +13,12 @@
 			align-items: center;
 			flex-direction: column;
 		}
+		img {
+			width: 200px;      /* set size */
+			height: 200px;     /* make it square */
+			border-radius: 50%; /* turns square into circle */
+			object-fit: cover;  /* keeps aspect ratio while filling */
+		}
 	</style>
 </head>
 
@@ -36,7 +42,7 @@
 	</ul>
 
 	<h3>My Photo</h3>
-	<img src="kaguya.jpeg" alt="My Photo" width="200">
+	<img src="kaguya.jpeg" alt="My Photo" width="300">
 
 	<p>Check out these websites:</p>
 	<a href="https://github.com/uraniumcore" target="_blank">GitHub</a><br>
