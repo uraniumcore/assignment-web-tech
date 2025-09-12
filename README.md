@@ -54,9 +54,9 @@ Finally, the goal was to **publish the webpage online** using GitHub Pages or Ne
 ---
 
 ## 3. Screenshots
-![alt text](1.png)
-![alt text](2.png)
-![alt text](3.png)
+![alt text](images/1.png)
+![alt text](images/2.png)
+![alt text](images/3.png)
 ---
 
 ## 4. Reflection
