@@ -18,17 +18,41 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById('equal').addEventListener('click', equalFunction);
 	document.getElementById('add').addEventListener('click', addFunction);
 	document.getElementById('subtract').addEventListener('click', subtractFunction);
-	document.getElementById('point').addEventListener('click', pointFunction);
-	document.getElementById('plusminus').addEventListener('click', plusminusFunction);
-	document.getElementById('percent').addEventListener('click', percentFunction);
-	document.getElementById('divide').addEventListener('click', divideFunction);
 	document.getElementById('multiply').addEventListener('click', multiplyFunction);
-	document.getElementById('rand').addEventListener('click', randFunction);
+	document.getElementById('divide').addEventListener('click', divideFunction);
+	document.getElementById('plusminus').addEventListener('click', plusminusFunction);
+	document.getElementById('point').addEventListener('click', pointFunction);
 
 
 	function acFunction() {
 		clearLine();
 		clearVal();
+		prevValue = '';
+	}
+
+	function plusminusFunction() {
+		if(value) {
+			if(value[0] == '-') {
+				let temp = value.slice(0, 0) + value.slice(0 + 1);
+				value = temp;
+			} else {
+				let temp = value;
+				value = '-';
+				value += temp;
+			}
+		} else {
+			value += '-';
+		}
+		document.getElementById("myParagraph").textContent = value;
+	}
+
+	function pointFunction() {
+		if(value) {
+			value += '.';
+		} else {
+			value += '0.'
+		}
+		document.getElementById("myParagraph").textContent = value;
 	}
 
 	function clearLine() {
@@ -37,12 +61,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function clearVal() {
 		value = '';
-		prevValue = '';
-		output = '';
 		prevFunc = '';
 	}
 
+	function executePrevFunc() {
+		if(prevFunc == '+') {
+			prevValue = String(Number(prevValue) + Number(value));
+			value = '';
+		}
+		if(prevFunc == '-') {
+			prevValue = String(Number(prevValue) - Number(value));
+			value = '';
+		}
+		if(prevFunc == '*') {
+			prevValue = String(Number(prevValue) * Number(value));
+			value = '';
+		}
+		if(prevFunc == '/') {
+			prevValue = String(Number(prevValue) / Number(value));
+			value = '';
+		}
+	}
+
 	function addFunction() {
+		if(prevFunc != '+') {
+			executePrevFunc();
+		}
 		if(value) {
 			if(prevFunc) {
 				prevValue = String(Number(prevValue) + Number(value));
@@ -51,12 +95,15 @@ document.addEventListener('DOMContentLoaded', function () {
 				prevValue = value;
 				value = '';
 			}
-			prevFunc = '+';
 		}
+		prevFunc = '+';
 		clearLine();
 	}
 
 	function subtractFunction() {
+		if(prevFunc != '-') {
+			executePrevFunc();
+		}
 		if(value) {
 			if(prevFunc) {
 				prevValue = String(Number(prevValue) - Number(value));
@@ -65,25 +112,69 @@ document.addEventListener('DOMContentLoaded', function () {
 				prevValue = value;
 				value = '';
 			}
-			prevFunc = '-';
 		}
+		prevFunc = '-';
 		clearLine();
 	}
 
+	function multiplyFunction() {
+		if(prevFunc != '*') {
+			executePrevFunc();
+		}
+		if(value) {
+			if(prevFunc) {
+				prevValue = String(Number(prevValue) * Number(value));
+				value = '';
+			} else {
+				prevValue = value;
+				value = '';
+			}
+		}
+		prevFunc = '*';
+		clearLine();
+	}
+
+	function divideFunction() {
+		if(prevFunc != '/') {
+			executePrevFunc();
+		}
+		if(value) {
+			if(prevFunc) {
+				prevValue = String(Number(prevValue) / Number(value));
+				value = '';
+			} else {
+				prevValue = value;
+				value = '';
+			}
+		}
+		prevFunc = '/';
+		clearLine();
+	}
+
+
 	function equalFunction() {
 		if(prevFunc == '+') {
-			console.log(value)
-			document.getElementById("myParagraph").textContent = Number(value) + Number(prevValue);
-			ans = String(Number(value) - Number(prevValue));
+			document.getElementById("myParagraph").textContent = Number(prevValue) + Number(value);
+			prevValue = String(Number(prevValue) + Number(value));
 			clearVal();
-			prevValue = ans;
 		}
 		if(prevFunc == '-') {
-			console.log(value)
-			document.getElementById("myParagraph").textContent = Number(value) - Number(prevValue);
-			ans = String(Number(value) - Number(prevValue));
+			document.getElementById("myParagraph").textContent = Number(prevValue) - Number(value);
+			prevValue = String(Number(prevValue) - Number(value));
 			clearVal();
-			prevValue = ans;
+		}
+		if(prevFunc == '*') {
+			document.getElementById("myParagraph").textContent = Number(prevValue) * Number(value);
+			prevValue = String(Number(prevValue) * Number(value));
+			clearVal();
+		}
+		if(prevFunc == '/') {
+			document.getElementById("myParagraph").textContent = Number(prevValue) / Number(value);
+			prevValue = String(Number(prevValue) / Number(value));
+			clearVal();
+		}
+		if(prevFunc == '' && value) {
+			document.getElementById("myParagraph").textContent = value;
 		}
 	}
 
@@ -140,7 +231,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-
-
 /*
 */
+

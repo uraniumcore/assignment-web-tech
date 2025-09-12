@@ -1,5 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
 p {
     font-size: 40px;
+    color: coral;
 }
 
 .parent {
@@ -7,33 +14,36 @@ p {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 8px;
-    height: 50vh;
+    height: 55vh;
     margin: auto;
     width: 50%;
 }
-
+    
 .div1 {
+    grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 2;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* style */
+    background-color: coral;
+    border-radius: 15px;
+    font-weight: 800;
+    /* style */
 }
 
 .div2 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.div3 {
     grid-column-start: 3;
     grid-row-start: 2;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* style */
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    /* style */
 }
 
 .div4 {
@@ -42,6 +52,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div5 {
@@ -50,7 +62,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div6 {
@@ -59,7 +72,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div7 {
@@ -68,7 +82,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div8 {
@@ -77,7 +92,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div9 {
@@ -86,7 +102,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div10 {
@@ -95,7 +112,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div11 {
@@ -104,7 +122,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div12 {
@@ -113,7 +132,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div13 {
@@ -122,7 +142,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div14 {
@@ -131,7 +152,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div15 {
@@ -140,7 +162,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div16 {
@@ -149,24 +172,19 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
-.div17 {
+.div18 {
+    grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 6;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.div18 {
-    grid-column-start: 2;
-    grid-row-start: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div19 {
@@ -175,6 +193,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div20 {
@@ -183,6 +203,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: cornflowerblue;
+    border-radius: 15px;
 }
 
 .div21 {
@@ -190,8 +212,10 @@ p {
     grid-column-start: 1;
     grid-row-start: 1;
 
-    background-color: rgb(216, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
+    border-color: cornflowerblue;
+    border-style: dashed;
     display: flex;
     align-items: end;
     justify-content: end;
