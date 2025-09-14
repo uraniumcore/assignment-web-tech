@@ -5,30 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Arsenskii Portfolio</title>
-	<style>
-		body {
-			background-color: #fff8e7;
-		}
-
-		.container {
-			background-color: #fff8e7;
-			margin: 30px auto;
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			max-width: 900px;
-		}
-		img {
-			width: 200px;
-			/* set size */
-			height: 200px;
-			/* make it square */
-			border-radius: 50%;
-			/* turns square into circle */
-			object-fit: cover;
-			/* keeps aspect ratio while filling */
-		}
-	</style>
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -107,8 +84,10 @@
 			</b>
 		</p>
 
-		<h3>Button Example</h3>
-		<h3><button><a href="about-me.html">Contact Me Here</a></button></h3>
+		<div class="links">
+			<a href="about-me.html"><button class="link-button">Contact Me Here</button></a>
+			<a href="calculator/calculator.html"><button class="link-button">Calculator</button></a>
+		</div>
 	</div>
 </body>
 

@@ -1,0 +1,55 @@
+body {
+	background-color: coral;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	color: cornflowerblue;
+}
+
+.container {
+	background-color: white;
+	border-radius: 35px;
+	margin: 30px auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: 900px;
+	padding: 50px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.link {
+	display: inline-block;
+}
+
+.link-button {
+	display: inline-block;
+	transition: all 0.2s ease-in;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	color: #090909;
+	padding: 0.7em 1.7em;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 0.5em;
+	background: #e8e8e8;
+	border: 1px solid #e8e8e8;
+	box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: coral;
+}
+
+a:visited {
+	text-decoration: none;
+	color: coral;
+}
