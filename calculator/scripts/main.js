@@ -1,10 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
+	document.getElementById('ac').addEventListener('click', acFunction);
+	document.getElementById('seven').addEventListener('click', sevenFunction);
+	document.getElementById('eight').addEventListener('click', eightFunction);
+	document.getElementById('nine').addEventListener('click', nineFunction);
+	document.getElementById('four').addEventListener('click', fourFunction);
+	document.getElementById('five').addEventListener('click', fiveFunction);
+	document.getElementById('six').addEventListener('click', sixFunction);
+	document.getElementById('one').addEventListener('click', oneFunction);
+	document.getElementById('two').addEventListener('click', twoFunction);
+	document.getElementById('three').addEventListener('click', threeFunction);
+	document.getElementById('zero').addEventListener('click', zeroFunction);
+	document.getElementById('equal').addEventListener('click', equalFunction);
+	document.getElementById('add').addEventListener('click', addFunction);
+	document.getElementById('subtract').addEventListener('click', subtractFunction);
+	document.getElementById('multiply').addEventListener('click', multiplyFunction);
+	document.getElementById('divide').addEventListener('click', divideFunction);
+	document.getElementById('plusminus').addEventListener('click', plusminusFunction);
+	document.getElementById('point').addEventListener('click', pointFunction);
+
 	let value = '';
 	let prevValue = '';
 	let output = '';
 	let prevFunc = '';
 
-	const acFunction = () => {
+	function acFunction() {
 		clearLine();
 		clearVal();
 		prevValue = '';
@@ -209,25 +228,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		document.getElementById("myParagraph").textContent = value;
 	}
 	
-	document.getElementById('ac').addEventListener('click', acFunction);
-	document.getElementById('seven').addEventListener('click', sevenFunction);
-	document.getElementById('eight').addEventListener('click', eightFunction);
-	document.getElementById('nine').addEventListener('click', nineFunction);
-	document.getElementById('four').addEventListener('click', fourFunction);
-	document.getElementById('five').addEventListener('click', fiveFunction);
-	document.getElementById('six').addEventListener('click', sixFunction);
-	document.getElementById('one').addEventListener('click', oneFunction);
-	document.getElementById('two').addEventListener('click', twoFunction);
-	document.getElementById('three').addEventListener('click', threeFunction);
-	document.getElementById('zero').addEventListener('click', zeroFunction);
-	document.getElementById('equal').addEventListener('click', equalFunction);
-	document.getElementById('add').addEventListener('click', addFunction);
-	document.getElementById('subtract').addEventListener('click', subtractFunction);
-	document.getElementById('multiply').addEventListener('click', multiplyFunction);
-	document.getElementById('divide').addEventListener('click', divideFunction);
-	document.getElementById('plusminus').addEventListener('click', plusminusFunction);
-	document.getElementById('point').addEventListener('click', pointFunction);
-
 });
 /*
 */

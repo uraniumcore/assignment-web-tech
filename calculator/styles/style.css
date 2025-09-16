@@ -1,228 +1,228 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
 }
 
 p {
-    font-size: 40px;
-    color: coral;
+	font-size: 40px;
+	color: coral;
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 8px;
-    height: 55vh;
-    margin: auto;
-    width: 50%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	gap: 8px;
+	height: 55vh;
+	margin: auto;
+	width: 50%;
 }
-    
+
 .div1 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* style */
-    background-color: coral;
-    border-radius: 15px;
-    font-weight: 800;
-    /* style */
+	grid-column: span 2 / span 2;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* style */
+	background-color: coral;
+	border-radius: 15px;
+	font-weight: 800;
+	/* style */
 }
 
 .div2 {
-    grid-column-start: 3;
-    grid-row-start: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	grid-column-start: 3;
+	grid-row-start: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    /* style */
-    background-color: cornflowerblue;
-    border-radius: 15px;
-    /* style */
+	/* style */
+	background-color: cornflowerblue;
+	border-radius: 15px;
+	/* style */
 }
 
 .div4 {
-    grid-column-start: 4;
-    grid-row-start: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 4;
+	grid-row-start: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div5 {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 1;
+	grid-row-start: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div6 {
-    grid-column-start: 2;
-    grid-row-start: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 2;
+	grid-row-start: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div7 {
-    grid-column-start: 3;
-    grid-row-start: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 3;
+	grid-row-start: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div8 {
-    grid-column-start: 4;
-    grid-row-start: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 4;
+	grid-row-start: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div9 {
-    grid-column-start: 1;
-    grid-row-start: 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 1;
+	grid-row-start: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div10 {
-    grid-column-start: 2;
-    grid-row-start: 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 2;
+	grid-row-start: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div11 {
-    grid-column-start: 3;
-    grid-row-start: 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 3;
+	grid-row-start: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div12 {
-    grid-column-start: 4;
-    grid-row-start: 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 4;
+	grid-row-start: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div13 {
-    grid-column-start: 1;
-    grid-row-start: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 1;
+	grid-row-start: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div14 {
-    grid-column-start: 2;
-    grid-row-start: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 2;
+	grid-row-start: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div15 {
-    grid-column-start: 3;
-    grid-row-start: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 3;
+	grid-row-start: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div16 {
-    grid-column-start: 4;
-    grid-row-start: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 4;
+	grid-row-start: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div18 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column: span 2 / span 2;
+	grid-column-start: 1;
+	grid-row-start: 6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div19 {
-    grid-column-start: 3;
-    grid-row-start: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 3;
+	grid-row-start: 6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div20 {
-    grid-column-start: 4;
-    grid-row-start: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 15px;
+	grid-column-start: 4;
+	grid-row-start: 6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border-radius: 15px;
 }
 
 .div21 {
-    grid-column: span 4 / span 4;
-    grid-column-start: 1;
-    grid-row-start: 1;
+	grid-column: span 4 / span 4;
+	grid-column-start: 1;
+	grid-row-start: 1;
 
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    border-color: cornflowerblue;
-    border-style: dashed;
-    display: flex;
-    align-items: end;
-    justify-content: end;
+	background-color: rgb(255, 255, 255);
+	border-radius: 15px;
+	border-color: cornflowerblue;
+	border-style: dashed;
+	display: flex;
+	align-items: end;
+	justify-content: end;
 }
 
 #myParagraph {
-    margin-right: 15px;
-    margin-top: 0;
-    margin-bottom: 10px;
+	margin-right: 15px;
+	margin-top: 0;
+	margin-bottom: 10px;
 }

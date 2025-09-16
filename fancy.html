@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Positioning, Float & Clear Demo</title>
+	<style>
+		.static-box {
+			background: #e0e0e0;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		.relative-box {
+			background: #c0eaff;
+			padding: 10px;
+			position: relative;
+			left: 30px;
+			top: 10px;
+			margin-bottom: 20px;
+		}
+
+		.float-container {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		.float-left {
+			float: left;
+			width: 45%;
+			background: #ffd1dc;
+			padding: 15px;
+			box-sizing: border-box;
+			margin-right: 5%;
+		}
+		.float-right {
+			float: right;
+			width: 45%;
+			background: #d1ffd6;
+			padding: 15px;
+			box-sizing: border-box;
+		}
+		.clear-box {
+			clear: both;
+			background: #f0f0f0;
+			padding: 10px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="static-box" style="border: 2px solid #333; color: #333;">Static Position (default, inline style)</div>
+	<div class="relative-box">Relative Position (shifted)</div>
+
+	<div class="float-container">
+		<div class="float-left">Float Left</div>
+		<div class="float-right">Float Right</div>
+		<div class="clear-box">This box clears floats</div>
+	</div>
+</body>
+</html>
