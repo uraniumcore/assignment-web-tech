@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .gallery {
+            max-width: 1000px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 6px;
+            background: #fff;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 8px;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.25s ease;
+            font-size: 14px;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="main-heading">Image Gallery</h1>
+
+        <section class="gallery" aria-label="Photo gallery">
+            <figure class="gallery-item">
+                <img src="images/kaguya.jpeg" alt="Gallery image 1">
+                <figcaption class="gallery-caption">Caption 1</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/clippy.jpeg" alt="Gallery image 2">
+                <figcaption class="gallery-caption">Caption 2</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/books.jpeg" alt="Gallery image 3">
+                <figcaption class="gallery-caption">Caption 3</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/kaguya.jpeg" alt="Gallery image 4">
+                <figcaption class="gallery-caption">Caption 4</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/clippy.jpeg" alt="Gallery image 5">
+                <figcaption class="gallery-caption">Caption 5</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/books.jpeg" alt="Gallery image 6">
+                <figcaption class="gallery-caption">Caption 6</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/kaguya.jpeg" alt="Gallery image 7">
+                <figcaption class="gallery-caption">Caption 7</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/clippy.jpeg" alt="Gallery image 8">
+                <figcaption class="gallery-caption">Caption 8</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/kaguya.jpeg" alt="Gallery image 9">
+                <figcaption class="gallery-caption">Caption 9</figcaption>
+            </figure>
+        </section>
+
+        <p><a href="index.html">Back to Home</a></p>
+    </div>
+</body>
+
+</html>

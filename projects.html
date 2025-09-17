@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .projects {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .project-1 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .project-2 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .project-3 {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .view {
+            padding: 10px;
+            border: 1px;
+            border-style: dashed;
+
+            grid-column: 2;
+            grid-row: 1 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-layout">
+            <header class="header">
+                <div class="brand">My Portfolio</div>
+                <nav class="navigator">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="about-me.html">About</a>
+                </nav>
+            </header>
+            <aside class="sidebar">
+
+            </aside>
+            <main class="main-content">
+                <div class="projects">
+                    <div class="project-1">
+                        <h3>Project 1</h3>
+                        <p>
+                            Here is the caption
+                        </p>
+                        <button id="view1">View</button>
+                    </div>
+                    <div class="project-2">
+                        <h3>Project 1</h3>
+                        <p>
+                            Here is the caption
+                        </p>
+                        <button id="view2">View</button>
+                    </div>
+                    <div class="project-3">
+                        <h3>Project 1</h3>
+                        <p>
+                            Here is the caption
+                        </p>
+                        <button id="view3">View</button>
+                    </div>
+                    <div id="view" class="view">
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer"></footer>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const viewEl = document.getElementById('view');
+
+            const projects = [
+                { title: 'Project 1', desc: 'Here is the caption for project 1.', more: 'Additional info 1.' },
+                { title: 'Project 2', desc: 'Here is the caption for project 2.', more: 'Additional info 2.' },
+                { title: 'Project 3', desc: 'Here is the caption for project 3.', more: 'Additional info 3.' }
+            ];
+
+            document.getElementById('view1').addEventListener('click', () => showProject(0));
+            document.getElementById('view2').addEventListener('click', () => showProject(1));
+            document.getElementById('view3').addEventListener('click', () => showProject(2));
+
+            function showProject(index) {
+                const p = projects[index];
+                viewEl.innerHTML = `
+                    <h3>${p.title}</h3>
+                    <p>${p.desc}</p>
+                    <p>${p.more}</p>
+                `;
+            }
+        });
+    </script>
+</body>
+
+</html>
