@@ -110,3 +110,24 @@ a:visited {
 	border-radius: 50%;
 	object-fit: cover;
 }
+
+@media (max-width: 720px) {
+	body {
+		font-size: 0.8em;
+	}
+
+	.grid-layout {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.sidebar ul {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.sidebar li + li {
+		margin-left: 10px;
+	}
+}
